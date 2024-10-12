@@ -4,7 +4,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 ## Dependancies & Environment
 
-Node ^20.10.0
+Node ^20.10.0 <br>
 Pnpm ^9.0.0
 
 Nuxt modules included:
