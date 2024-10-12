@@ -2,14 +2,19 @@
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   // Nuxt app config
+  compatibilityDate: '2024-04-03',
+  runtimeConfig: {
+    public: {
+      TMDB_KEY: process.env.NUXT_PUBLIC_TMDB_KEY,
+    },
+  },
+
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     },
   },
-
-  compatibilityDate: '2024-04-03',
   css: ['~/assets/css/globals.css'],
   experimental: {
     typedPages: true,
@@ -53,7 +58,7 @@ export default defineNuxtConfig({
 
   // Nuxt SEO module config
   site: {
-    url: '#',
+    url: 'hellotmdb.pages.dev',
     name: 'HelloTMDB - Movies App',
     description: 'A webapp on top of ',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed

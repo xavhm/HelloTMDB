@@ -6,6 +6,7 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 Node ^20.10.0 <br>
 Pnpm ^9.0.0
+A TMBD api key.
 
 Nuxt modules included:
 
