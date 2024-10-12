@@ -1,11 +1,20 @@
-# Nuxt 3 Minimal Starter
+# Nuxt3 - HelloTMDB
 
-## Dependancies
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+
+## Dependancies & Environment
 
 Node ^20.10.0
 Pnpm ^9.0.0
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Nuxt modules included:
+
+-   nuxt/eslint
+-   nuxt/tailwind
+-   nuxt/font
+-   nuxt/image
+-   nuxt/seo
+-   nuxt/securty
 
 ## Setup
 
@@ -43,14 +52,5 @@ pnpm run build
 bun run build
 ```
 
-Locally preview production build:
-
-```bash
-# pnpm
-pnpm run preview
-
-# bun
-bun run preview
-```
-
+Deployment target : Cloudflare Pages
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
