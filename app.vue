@@ -1,8 +1,9 @@
 <template>
   <div>
     <NuxtRouteAnnouncer />
-    <h3 class="text-center text-purple-600">Test TailwindCSS</h3>
-    <NuxtWelcome />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
 

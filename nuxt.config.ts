@@ -1,18 +1,21 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 // eslint-disable-next-line no-undef
 export default defineNuxtConfig({
+  // Nuxt app config
   app: {
     head: {
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
     },
   },
+
+  compatibilityDate: '2024-04-03',
+  css: ['~/assets/css/globals.css'],
   experimental: {
     typedPages: true,
     viewTransition: true,
   },
-  compatibilityDate: '2024-04-03',
-  css: ['~/assets/css/globals.css'],
+
   devtools: { enabled: true },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -23,7 +26,7 @@ export default defineNuxtConfig({
     'nuxt-security',
   ],
 
-  // Nuxt font config
+  // Nuxt fonts module config
   fonts: {
     defaults: {
       weights: [300, 500, 700, 900],
@@ -31,7 +34,7 @@ export default defineNuxtConfig({
     },
   },
 
-  // Nuxt security config
+  // Nuxt Security module config
   security: {
     nonce: true,
     headers: {
@@ -48,7 +51,7 @@ export default defineNuxtConfig({
     },
   },
 
-  // Nuxt SEO config
+  // Nuxt SEO module config
   site: {
     url: '#',
     name: 'HelloTMDB - Movies App',
