@@ -38,6 +38,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
+    '@vueuse/nuxt',
   ],
 
   // Nuxt fonts module config

@@ -10,8 +10,8 @@ export default function useMovies() {
     return `${apiBaseUrl}/movie/${id}?&api_key=${apiKey}`;
   }
 
-  function getSearchedMovie(query: string, page: number = 1) {
-    return `${apiBaseUrl}/search/movie?query=${query}&page=${page}&api_key=${apiKey}`;
+  function getSearchedMovie() {
+    return `${apiBaseUrl}/search/movie?api_key=${apiKey}&`;
   }
 
   return {

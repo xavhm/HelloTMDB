@@ -1,12 +1,13 @@
 <template>
   <article
-    class="aspect-[2/3] rounded-md overflow-hidden transition-transform ease-out motion-safe:hover:scale-110 cursor-pointer"
+    class="aspect-[2/3] rounded-md overflow-hidden transition-transform ease-out motion-safe:hover:scale-110 cursor-pointer bg-slate-500"
     @click="tryViewTransition(movie.id)"
   >
     <NuxtImg
+      v-if="movie?.poster_path"
       format="webp"
       width="300"
-      :src="getImageWithSize('w300', movie.poster_path)"
+      :src="getImageWithSize('w300', movie?.poster_path)"
       :alt="movie.title"
       class="w-full h-full object-cover"
       :class="{ view_transition: activeTransition }"
