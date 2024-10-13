@@ -2,12 +2,12 @@
   <main arial-label="Find a movie">
     <UInput v-model="search" placeholder="Avengers Endgame..." variant="outline" />
     <TheGrid>
-      <TheMovieCard v-for="movie in movies" :key="movie.id" :movie="movie" />
+      <!-- <TheMovieCard v-for="movie in movies" :key="movie.id" :movie="movie" /> -->
     </TheGrid>
   </main>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   const { getSearchedMovie } = useMovies();
 
   const search = ref<string>('');

@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
   useSeoMeta({
     ogTitle: 'HelloTMDB - A Movie Catalog',
     description: 'HelloTMDB - A Movie Catalog',
