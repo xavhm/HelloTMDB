@@ -27,7 +27,7 @@
         <li>
           <nuxt-link
             v-slot="{ isActive }"
-            to="/search"
+            :to="{ name: 'search' }"
             title="Find a movie"
             prefetch-on="interaction"
           >
