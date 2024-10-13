@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-// eslint-disable-next-line no-undef
 export default defineNuxtConfig({
   // Nuxt app config
   compatibilityDate: '2024-04-03',
@@ -23,12 +22,14 @@ export default defineNuxtConfig({
 
   devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss',
     '@nuxt/fonts',
     '@nuxt/eslint',
     '@nuxt/image',
     '@nuxtjs/seo',
     'nuxt-security',
+    '@nuxt/ui',
+    '@nuxtjs/color-mode',
+    '@nuxt/icon',
   ],
 
   // Nuxt fonts module config
@@ -37,6 +38,11 @@ export default defineNuxtConfig({
       weights: [300, 500, 700, 900],
       styles: ['normal', 'italic'],
     },
+  },
+
+  // Nuxt color-mode module config
+  colorMode: {
+    preference: 'dark',
   },
 
   // Nuxt Security module config
