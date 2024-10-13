@@ -7,7 +7,15 @@ export default defineNuxtConfig({
       TMDB_KEY: process.env.NUXT_PUBLIC_TMDB_KEY,
     },
   },
-
+  ssr: false,
+  hooks: {
+    'prerender:routes'({ routes }) {
+      routes.clear();
+    },
+  },
+  imports: {
+    dirs: ['types/**'],
+  },
   app: {
     head: {
       charset: 'utf-8',
@@ -50,6 +58,7 @@ export default defineNuxtConfig({
     nonce: true,
     headers: {
       contentSecurityPolicy: {
+        'img-src': false,
         'style-src':
           process.env.NODE_ENV === 'development'
             ? ["'self'", "'unsafe-inline'"]
